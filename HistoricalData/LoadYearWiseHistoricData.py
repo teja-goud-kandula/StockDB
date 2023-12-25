@@ -14,8 +14,8 @@ df = df.fillna(value=0)
 print(df)
 
 conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=WorkPC;'
-                      'Database=StockDB;'
+                      'Server=WorkPC;'      # Define the server name here
+                      'Database=StockDB;'   # Define the database name here 
                       'Trusted_Connection=yes;')
 cursor = conn.cursor()
 
